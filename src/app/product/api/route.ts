@@ -1,13 +1,23 @@
-export const GET = (req: Request, res: any) => {
-  console.log("Get huselt");
-  // return new Error("error")
 
-  return Response.json({
-    id: "INV001",
-    title: "Job to do 1",
-    status: "PENDING",
-    team: "My-1",
-  });
-};
+// import { startServerAndCreateNextHandler } from "@as-integrations/next";
+// import { ApolloServer } from "@apollo/server";
+// import { NextRequest } from "next/server";
+// import { gql } from "graphql-tag";
+// // import typeDefs from "./src/app/schema";
 
-// export const DELETE = () => {};
+// const resolvers = {
+//   Query: {
+//     hello: () => "Hello world!",
+//   },
+// };
+
+// const server = new ApolloServer({
+//     typeDefs,
+//     resolvers,
+// });
+
+// const handler = startServerAndCreateNextHandler<NextRequest>(server, {
+//     context: async req => ({ req }),
+// });
+
+// export { handler as GET, handler as POST };
