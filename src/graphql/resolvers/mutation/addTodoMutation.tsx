@@ -5,12 +5,13 @@ export const addTodoMutation = async (
   _: any,
   { input }: { input: AddTodoInput }
 ) => {
-  const { todoName, todoTeam } = input;
+  const { todoName, todoTeam, status } = input;
   console.log(input);
   try {
     await TodoModel.create({
       todoName: todoName,
       todoTeam: todoTeam,
+      status: status,
     });
     const allTodo = await TodoModel.find();
     return allTodo;

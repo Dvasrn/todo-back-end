@@ -31,11 +31,13 @@ export type Query = {
 
 export type Todo = {
   __typename?: 'Todo';
+  status?: Maybe<Scalars['Boolean']['output']>;
   todoName?: Maybe<Scalars['String']['output']>;
   todoTeam?: Maybe<Scalars['String']['output']>;
 };
 
 export type AddTodoInput = {
+  status?: InputMaybe<Scalars['Boolean']['input']>;
   todoName?: InputMaybe<Scalars['String']['input']>;
   todoTeam?: InputMaybe<Scalars['String']['input']>;
 };
